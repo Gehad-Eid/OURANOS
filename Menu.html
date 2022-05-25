@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title> Menu </title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	
+	
+	<body>
+		
+		<header>
+			
+			<div class="logo">
+				<a href="index.html" accesskey="h" > <img src="logo/logo.png" alt="logo" ></a>
+			</div> 
+			
+			<nav class="nav">			
+				<ul>
+					<li class="navli"><a href ="Staff.html" accesskey="s"> About Staff </a></li>
+					<li class="navli"><a href ="Reservation.html" accesskey="r"> Tables Reservations </a></li>
+					<li class="navli"><a href ="Order.html" accesskey="o"> Orders </a></li>
+					<li class="dropdown"><a href ="Menu.html" accesskey="m" class="dropbtn"> Menu </a>
+						<div class="dropdown-content">
+							<a href="Dishes.html" accesskey="1"> Dishes </a>
+							<a href="Desserts.html" accesskey="2"> Desserts </a>
+							<a href="Drinks.html" accesskey="3"> Drinks </a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			
+		<div id="toggle" onclick = DarkMode()>
+			<i class="indicator"></i>
+		</div>			
+			
+			<ul class ="breadcrumb">
+				<li><a href="index.html" > Home </a> </li>
+				<li>Menu</li>
+			</ul>
+			
+		</header>
+		
+		
+		<main>
+			
+			<div class="title3">
+				<h4>MENU</h4>
+			</div>
+			
+			
+			
+			
+			<div class="flex-container">
+				<div class="container">
+					<img src="menu/Dishes.jpg" alt="Dishes menu" class="image">					
+					<a href ="Dishes.html"><div class="overlay">
+						<div class="text">Dishes</div>
+					</div></a>
+				</div>
+				
+				
+				
+				<div class="container">
+					<img src="menu/Desserts.jpg" alt="Desserts menu" class="image">					
+					<a href ="Desserts.html"><div class="overlay">
+						<div class="text">Desserts</div>
+					</div>
+					</a>
+				</div>
+				
+				
+				
+				<div class="container">
+					<img src="menu/Drinks.jpg" alt="Drinks menu" class="image">					
+					<a href ="Drinks.html"><div class="overlay">
+						<div class="text">Drinks</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			
+		</main>
+		
+		
+		<footer>
+			<div class="footerLinks">
+				<ul>
+					<li><a href="https://twitter.com/OuranosKSA" target="_blank" > <img src="logo/twitter.png" alt="Twitter" ></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100074075235340" target="_blank" > <img src="logo/facebook.png" alt="Facebook" ></a></li>
+					<li><a href="mailto:ouranos.management@gmail.com" > <img src="logo/email.png" alt="Email" ></a></li>
+				</ul>
+			</div>
+			
+			<div class="copyright">
+				<p>Copyright 2021</p>
+			</div>
+			
+		</footer>
+		
+		<script src="all.js"></script>
+	</body>
+	
+	
+	
+</html>													

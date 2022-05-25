@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title> About Staff </title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="style.css">
+		<!-- <script src="rating.js"></script> -->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	
+	
+	
+	<body>
+		
+		
+		<header>
+			
+			<div class="logo">
+				<a href="index.html" accesskey="h" > <img src="logo/logo.png" alt="logo" ></a>
+			</div> 
+			
+			<nav class="nav">			
+				<ul>
+					<li class="navli"><a href ="Staff.html" accesskey="s"> About Staff </a></li>
+					<li class="navli"><a href ="Reservation.html" accesskey="r"> Tables Reservations </a></li>
+					<li class="navli"><a href ="Order.html" accesskey="o"> Orders </a></li>
+					<li class="dropdown"><a href ="Menu.html" accesskey="m" class="dropbtn"> Menu </a>
+						<div class="dropdown-content">
+							<a href="Dishes.html" accesskey="1"> Dishes </a>
+							<a href="Desserts.html" accesskey="2"> Desserts </a>
+							<a href="Drinks.html" accesskey="3"> Drinks </a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="toggle" onclick = DarkMode()>
+				<i class="indicator"></i>
+			</div>
+			
+			<ul class ="breadcrumb">
+				<li><a href="index.html" > Home </a> </li>
+				<li>About Staff</li>
+			</ul>
+			
+		</header>
+		
+		
+		
+		
+		
+		<main>
+			
+			<div class="title4">
+				<h4>Employees</h4>
+			</div>
+			
+			<form class="staffSearch" action="/action_page.php" style="margin:auto;max-width:300px">
+				<input type="text" placeholder="Search.." name="search2">
+				<input type="submit" class="fa fa-search" value="search" >
+			</form>
+			<br>
+			<br>
+			
+			<div class="staff_emp1-2">
+				
+				<div class="emp1">
+					<div class="empImg">
+						
+						<img class="empimg1" src="img/1.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="1s1" onclick="rateCal(1,1)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="1s2" onclick="rateCal(2,1)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="1s3" onclick="rateCal(3,1)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="1s4" onclick="rateCal(4,1)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="1s5" onclick="rateCal(5,1)"></i>
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG1">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Ahmed Fahd</h4>
+						
+					</div>
+					<div class="empInfor1">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Cooker </td>
+								<td>Years of Experience: 9</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 30 </td>
+								<td>Gender : Male </td>
+								<td></td>
+							</tr>
+						</table>
+						
+					</div>
+				</div>
+				
+				<div class="emp2">
+					<div class="empImg">
+						<img class="empimg2" src="img/2.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="2s1" onclick="rateCal(1,2)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="2s2" onclick="rateCal(2,2)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="2s3" onclick="rateCal(3,2)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="2s4" onclick="rateCal(4,2)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="2s5" onclick="rateCal(5,2)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG2">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Marwa Ahmed</h4>
+						
+					</div>
+					<div class="empInfor2">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Waiter </td>
+								<td>Years of Experience: 2</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 25 </td>
+								<td>Gender : female </td>
+								<td></td>
+							</tr>
+						</table>
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			
+			<div class="staff_emp3-4">
+				
+				<div class="emp3">
+					<div class="empImg">
+						<img class="empimg3" src="img/3.png" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="3s1" onclick="rateCal(1,3)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="3s2" onclick="rateCal(2,3)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="3s3" onclick="rateCal(3,3)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="3s4" onclick="rateCal(4,3)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="3s5" onclick="rateCal(5,3)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG3">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Mohammed Talal</h4>
+						
+					</div>
+					<div class="empInfor3">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Cooker </td>
+								<td>Years of Experience: 20</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 52 </td>
+								<td>Gender : Male </td>
+								<td></td>
+							</tr>
+						</table>
+						
+						
+						
+					</div>
+				</div>
+				
+				<div class="emp4">
+					<div class="empImg">
+						<img class="empimg4" src="img/4.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="4s1" onclick="rateCal(1,4)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="4s2" onclick="rateCal(2,4)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="4s3" onclick="rateCal(3,4)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="4s4" onclick="rateCal(4,4)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="4s5" onclick="rateCal(5,4)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG4">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Yasmine Badr</h4>
+						
+					</div>
+					<div class="empInfor4">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Waiter </td>
+								<td>Years of Experience: 5</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 32 </td>
+								<td>Gender : female </td>
+								<td></td>
+							</tr>
+						</table>
+						
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="staff_emp5-6">
+				
+				<div class="emp5">
+					<div class="empImg">
+						<img class="empimg5" src="img/5.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="5s1" onclick="rateCal(1,5)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="5s2" onclick="rateCal(2,5)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="5s3" onclick="rateCal(3,5)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="5s4" onclick="rateCal(4,5)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="5s5" onclick="rateCal(5,5)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG5">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Mohammed Shaker</h4>
+						
+					</div>
+					<div class="empInfor5">
+						<table>
+							<tr>
+								
+								<td></td>
+								<td>Job title: manager </td>
+								<td>Years of Experience: 8</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 39 </td>
+								<td>Gender: Male</td>
+								<td></td>
+							</tr>
+							
+						</table>
+						
+						
+						
+					</div>
+				</div>
+				
+				<div class="emp6">
+					<div class="empImg">
+						<img class="empimg6" src="img/6.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="6s1" onclick="rateCal(1,6)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="6s2" onclick="rateCal(2,6)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="6s3" onclick="rateCal(3,6)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="6s4" onclick="rateCal(4,6)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="6s5" onclick="rateCal(5,6)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG6">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Nada Hassan</h4>
+						
+					</div>
+					<div class="empInfor6">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Casher </td>
+								<td>Years of Experience: 6</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 29 </td>
+								<td>Gender : female </td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="staff_emp7-8">
+				
+				<div class="emp7">
+					<div class="empImg">
+						<img class="empimg7" src="img/7.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="7s1" onclick="rateCal(1,7)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="7s2" onclick="rateCal(2,7)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="7s3" onclick="rateCal(3,7)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="7s4" onclick="rateCal(4,7)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="7s5" onclick="rateCal(5,7)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG7">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Ruba Bassam</h4>
+						
+						
+					</div>
+					<div class="empInfor7">
+						<table>
+							<tr>
+								<td></td>
+								<td>Job title: Waiter </td>
+								<td>Years of Experience: 10</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 27</td>
+								<td>Gender : female </td>
+								<td></td>
+							</tr>
+						</table>
+						
+						
+						
+					</div>
+				</div>
+				
+				<div class="emp8">
+					<div class="empImg">
+						<img class="empimg8" src="img/8.jpg" alt="employee photo" style="width:150px;height:150px">
+						<div class = "staff_star">
+							<div class="rate">
+								<i class="fa fa-star" aria-hidden="true" id="8s1" onclick="rateCal(1,8)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="8s2" onclick="rateCal(2,8)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="8s3" onclick="rateCal(3,8)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="8s4" onclick="rateCal(4,8)"></i>
+								<i class="fa fa-star" aria-hidden="true" id="8s5" onclick="rateCal(5,8)"></i>	
+							</div>
+							
+							<div class="avg">
+								<p id="staffAVG8">0/5</p>
+							</div>
+							
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<h4 class="staffn">Omar Adam</h4>
+						
+						
+					</div>
+					<div class="empInfor8">
+						<table>
+							<tr>
+								
+								<td></td>
+								<td>Job title: Casher </td>
+								<td>Years of Experience: 12</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Age : 43 </td>
+								<td>Gender: Male</td>
+								<td></td>
+							</tr>
+							
+						</table>
+						
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			
+		</main>
+		
+		
+		<footer>
+			<div class="footerLinks">
+				<ul>
+					<li><a href="https://twitter.com/OuranosKSA" target="_blank" > <img src="logo/twitter.png" alt="Twitter" ></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100074075235340" target="_blank" > <img src="logo/facebook.png" alt="Facebook" ></a></li>
+					<li><a href="mailto:ouranos.management@gmail.com" > <img src="logo/email.png" alt="Email" ></a></li>
+				</ul>
+			</div>
+			
+			<div class="copyright">
+				<p>Copyright 2021</p>
+			</div>
+			
+		</footer>
+		
+		<script src="all.js"></script>
+		<script src="Staff.js"></script>
+		
+		
+		
+		<script>	
+			
+			$(document).ready(function(){
+				$("#1s1").click(function(){
+					$("#1s1").css("color","khaki");
+				});	
+				
+				
+				$("#1s2").click(function(){
+					$("#1s1,#1s2").css("color","khaki");
+					
+				});
+				
+				$("#1s3").click(function(){
+					$("#1s1,#1s2,#1s3").css("color","khaki");
+					
+				});
+				
+				$("#1s4").click(function(){
+					$("#1s1,#1s2,#1s3,#1s4").css("color","khaki"); 
+					
+				});
+				
+				$("#1s5").click(function(){
+					$("#1s1,#1s2,#1s3,#1s4,#1s5").css("color","khaki"); 
+					
+				});
+				
+				////////////////////////////////
+				
+				$("#2s1").click(function(){
+					$("#2s1").css("color","khaki"); 
+					
+				});		
+				
+				$("#2s2").click(function(){
+					$("#2s1,#2s2").css("color","khaki"); 
+				});
+				
+				$("#2s3").click(function(){
+					$("#2s1,#2s2,#2s3").css("color","khaki"); 
+				});
+				
+				$("#2s4").click(function(){
+					$("#2s1,#2s2,#2s3,#2s4").css("color","khaki"); 
+				});
+				
+				$("#2s5").click(function(){
+					$("#2s1,#2s2,#2s3,#2s4,#2s5").css("color","khaki"); 
+				});
+				
+				////////////////////////////////
+				
+				$("#3s1").click(function(){
+					$("#3s1").css("color","khaki"); 
+				});		
+				
+				$("#3s2").click(function(){
+					$("#3s1,#3s2").css("color","khaki"); 
+				});
+				
+				$("#3s3").click(function(){
+					$("#3s1,#3s2,#3s3").css("color","khaki"); 
+				});
+				
+				$("#3s4").click(function(){
+					$("#3s1,#3s2,#3s3,#3s4").css("color","khaki"); 
+				});
+				
+				$("#3s5").click(function(){
+					$("#3s1,#3s2,#3s3,#3s4,#3s5").css("color","khaki"); 
+				});
+				
+				////////////////////////////////
+				
+				$("#4s1").click(function(){
+					$("#4s1").css("color","khaki"); 
+				});		
+				
+				$("#4s2").click(function(){
+					$("#4s1,#4s2").css("color","khaki");
+				});
+				
+				$("#4s3").click(function(){
+					$("#4s1,#4s2,#4s3").css("color","khaki"); 
+				});
+				
+				$("#4s4").click(function(){
+					$("#4s1,#4s2,#4s3,#4s4").css("color","khaki"); 
+				});
+				
+				$("#4s5").click(function(){
+					$("#4s1,#4s2,4s3,#4s4,#4s5").css("color","khaki"); 
+				});
+				
+				
+				////////////////////////////////
+				
+				$("#5s1").click(function(){
+					$("#5s1").css("color","khaki"); 
+				});		
+				
+				$("#5s2").click(function(){
+					$("#5s1,#5s2").css("color","khaki"); 
+				});
+				
+				$("#5s3").click(function(){
+					$("#2s1,#5s2,#5s3").css("color","khaki"); 
+				});
+				
+				$("#5s4").click(function(){
+					$("#5s1,#5s2,#5s3,#5s4").css("color","khaki"); 
+				});
+				
+				$("#5s5").click(function(){
+					$("#5s1,#5s2,#5s3,#5s4,#5s5").css("color","khaki"); 
+				});
+				
+				
+				////////////////////////////////
+				
+				$("#6s1").click(function(){
+					$("#6s1").css("color","khaki"); 
+				});		
+				
+				$("#6s2").click(function(){
+					$("#6s1,#6s2").css("color","khaki"); 
+				});
+				
+				$("#6s3").click(function(){
+					$("#6s1,#6s2,#6s3").css("color","khaki"); 
+				});
+				
+				$("#6s4").click(function(){
+					$("#6s1,#6s2,#6s3,#6s4").css("color","khaki"); 
+				});
+				
+				$("#6s5").click(function(){
+					$("#6s1,#6s2,#6s3,#6s4,#6s5").css("color","khaki"); 
+				});
+				
+				
+				////////////////////////////////
+				
+				$("#7s1").click(function(){
+					$("#7s1").css("color","khaki"); 
+				});		
+				
+				$("#7s2").click(function(){
+					$("#7s1,#7s2").css("color","khaki"); 
+				});
+				
+				$("#7s3").click(function(){
+					$("#7s1,#7s2,#7s3").css("color","khaki"); 
+				});
+				
+				$("#7s4").click(function(){
+					$("#7s1,#7s2,#7s3,#7s4").css("color","khaki"); 
+				});
+				
+				$("#7s5").click(function(){
+					$("#7s1,#7s2,#7s3,#7s4,#7s5").css("color","khaki"); 
+				});
+				
+				////////////////////////////////
+				
+				$("#8s1").click(function(){
+					$("#8s1").css("color","khaki"); 
+				});		
+				
+				$("#8s2").click(function(){
+					$("#8s1,#8s2").css("color","khaki"); 
+				});
+				
+				$("#8s3").click(function(){
+					$("#8s1,#8s2,#8s3").css("color","khaki"); 
+				});
+				
+				$("#8s4").click(function(){
+					$("#8s1,#8s2,#8s3,#8s4").css("color","khaki"); 
+				});
+				
+				$("#8s5").click(function(){
+					$("#8s1,#8s2,#8s3,#8s4,#8s5").css("color","khaki"); 
+				});
+				
+				////////////////////////////////
+				
+			}); 		
+		</script>
+		
+	</body>	
+</html>		

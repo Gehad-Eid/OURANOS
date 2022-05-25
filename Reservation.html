@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	
+	
+	<head>
+		<title>Tables Reservations</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- 		<script src="Reservation.js"></script>
+		-->		<meta name="viewport" content="width=device-width">
+	</head>
+	
+	
+	
+	<body>
+		
+		<header>
+			
+			<div class="logo">
+				<a href="index.html" accesskey="h" > <img src="logo/logo.png" alt="logo" ></a>
+			</div> 
+			
+			<nav class="nav">			
+				<ul>
+					<li class="navli"><a href ="Staff.html" accesskey="s"> About Staff </a></li>
+					<li class="navli"><a href ="Reservation.html" accesskey="r"> Tables Reservations </a></li>
+					<li class="navli"><a href ="Order.html" accesskey="o"> Orders </a></li>
+					<li class="dropdown"><a href ="Menu.html" accesskey="m" class="dropbtn"> Menu </a>
+						<div class="dropdown-content">
+							<a href="Dishes.html" accesskey="1"> Dishes </a>
+							<a href="Desserts.html" accesskey="2"> Desserts </a>
+							<a href="Drinks.html" accesskey="3"> Drinks </a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			
+			
+		</header>
+		
+		<div id="toggle" onclick = DarkMode()>
+			<i class="indicator"></i>
+		</div>
+		
+		<ul class ="breadcrumb">
+			<li><a href="index.html" > Home </a> </li>
+			<li>Tables Reservations</li>
+		</ul>
+		
+		
+		
+		<main>
+			
+			<form  id="formid" action="" name="formName"  required>
+				
+				<div class="begain">
+					
+					<!-- inter info   -->
+					<div class="information" id="information">
+						<h3 style="margin-bottom:0px;"> Inter the customer information: </h3>
+						<p style="color:red; margin-top:0px;"">Note:<small style="color:red;">Blur after you input or click on the feilds</small></p>
+						<!-- <div> -->
+							<input name="name" type="text" onblur="validationN()" placeholder="Full name" required >
+							<input name="Phone" type="text" placeholder="Phone number" maxlength="10" onblur="validationP()" required>
+							<input name="numcstmr" type="text" placeholder="Number of customers" onblur="validationC()" required>
+						<!-- </div> -->
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="all">
+					<div class="floor">
+						<h4>ground floor</h4>
+					</div>
+					<div class="fixed">
+						
+						
+						<div class="all-tables">
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 1</h4>
+								</div>
+								<img id="1" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 2</h4>
+								</div>
+								<img id="2" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 3</h4>
+								</div>
+								<img id="3" src="tables/green4.jpg" alt="green" onclick="changeImage(this,4,this.id)" >
+								
+							</div>
+							
+							
+							<div class="single-table" >
+								<div class="space">
+									<pre>                             </pre>
+									<div class="spase2"></div>
+								</div>
+								
+							</div>
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 4</h4>
+								</div>
+								<img id="4" src="tables/green2.jpeg" alt="green" onclick="changeImage(this,2,this.id)">
+								
+							</div>
+							
+							
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 5</h4>
+								</div>
+								<img id="5" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 6</h4>
+								</div>
+								<img id="6" src="tables/green4.jpg" alt="green"  onclick="changeImage(this,4,this.id)">
+								
+							</div>
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 7</h4>
+								</div>
+								<img id="7" src="tables/green4.jpg" alt="green" onclick="changeImage(this,4,this.id)">
+							</div>
+							
+							
+							<div class="single-table" >
+								<div class="spaceup">
+									<pre>                             </pre>
+									<div class="spaseup2"></div>
+								</div>
+								
+							</div>
+							
+							
+							
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				
+				
+				<div class="all">
+					<div class="floor">
+						<h4>first floor</h4>
+					</div>
+					<div class="fixed">
+						
+						
+						<div class="all-tables">
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 8</h4>
+								</div>
+								<img id="8" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 9</h4>
+								</div>
+								<img id="9" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 10</h4>
+								</div>
+								<img id="10" src="tables/green4.jpg" alt="green" onclick="changeImage(this,4,this.id)" >
+								
+							</div>
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 11</h4>
+								</div>
+								<img id="11" src="tables/green2.jpeg" alt="green" onclick="changeImage(this,2,this.id)">
+							</div>
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 12</h4>
+								</div>
+								<img id="12" src="tables/green4.jpg" alt="green" onclick="changeImage(this,4,this.id)">
+								
+							</div>
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 13</h4>
+								</div>
+								<img id="13" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+								
+							</div>
+							
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 14</h4>
+								</div>
+								<img id="14" src="tables/green2.jpeg" alt="green" onclick="changeImage(this,2,this.id)" >
+								
+							</div>
+							
+							
+							
+							
+							<div class="single-table">
+								<div class="table-num">
+									<h4>table 15</h4>
+								</div>
+								<img id="15" src="tables/green6.jpg" alt="green" onclick="changeImage(this,6,this.id)">
+							</div>
+							
+							
+							<div class="single-table" >
+								<div class="spaceup">
+									<pre> 						</pre>
+								</div>
+								
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>	
+				
+				<button class="button reservebtn" type="submit" onclick="SubmitForm('formid')">Reserve</button>	
+			</form>	
+			
+		</main>
+		
+		
+		
+		<!-- footer -->		
+		<footer>
+			<div class="footerLinks">
+				<ul>
+					<li><a href="https://twitter.com/OuranosKSA" target="_blank" > <img src="logo/twitter.png" alt="Twitter" ></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100074075235340" target="_blank" > <img src="logo/facebook.png" alt="Facebook" ></a></li>
+					<li><a href="mailto:ouranos.management@gmail.com" > <img src="logo/email.png" alt="Email" ></a></li>
+				</ul>
+			</div>
+			
+			<div class="copyright">
+				<p>Copyright 2021</p>
+			</div>
+			
+		</footer>
+		
+		<!-- <script>
+			var element = document.body;
+			const toggle = document.getElementById('toggle');
+			toggle.onclick = function(){
+			toggle.classList.toggle('active');
+			element.classList.toggle("dark-mode");
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			
+			}
+		</script> -->
+		
+		
+		<script src="Reservation.js"></script>
+		<script src="all.js"></script>
+		<!-- <script type="text/javascript" src="Order.js"></script> -->
+	</body>
+	
+</html>
+
+
+
+
+<!-- 
+	<section>
+	ground floor 		
+	<form class="form1">
+	<fieldset>
+	<legend>ground floor</legend>
+	
+	<div class="tabels1">
+	<div class="line1">
+	<img class="t1" src="photo/tableG1.png" alt="green table" width= "200" height="200">
+	<img class="t1" src="photo/tableR2.png" alt="red table" width= "200" height="200">
+	<img class="t1" src="photo/tableG3.png" alt="green table" width= "200" height="200">
+	<img class="t1" src="photo/tableG4.png" alt="green table" width= "200" height="200">
+	</div>
+	<div class="line2">
+	<img class="t2" src="photo/tableR5.png" alt="red table" width= "200" height="200">
+	<img class="t2" src="photo/tableG6.png" alt="green table" width= "200" height="200">
+	<img class="t2" src="photo/tableR7.png" alt="red table" width= "200" height="200">
+	<img class="t2" src="photo/tableG8.png" alt="green table" width= "200" height="200">
+	</div>
+	</div>
+	
+	</fieldset>
+	</form>
+	
+	<br>
+	<br>
+	
+	first floor
+	<form class="form2">
+	<fieldset>
+	<legend>first floor</legend>
+	<div class ="tabels2">
+	<div class="line1">
+	<img class="t1" src="photo/tableR9.png" alt="red table" width= "200" height="200">
+	<img class="t1" src="photo/tableG10.png" alt="green table" width= "200" height="200">
+	<img class="t1" src="photo/tableR11.png" alt="red table" width= "200" height="200">
+	<img class="t1" src="photo/tableG12.png" alt="green table" width= "200" height="200">
+	</div>
+	<div class="line2">
+	<img class="t2" src="photo/tableR13.png" alt="green table" width= "200" height="200">
+	<img class="t2" src="photo/tableG14.png" alt="red table" width= "200" height="200">
+	<img class="t2" src="photo/tableR15.png" alt="red table" width= "200" height="200">
+	<img class="t2" src="photo/tableG16.png" alt="green table" width= "200" height="200">
+	</div>	
+	</div>
+	</fieldset>
+	</form>
+</section>    -->			

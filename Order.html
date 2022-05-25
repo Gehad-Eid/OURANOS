@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Orders </title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	
+	
+	<body>
+		
+		<header>
+			
+			<div class="logo">
+				<a href="index.html" accesskey="h" > <img src="logo/logo.png" alt="logo" ></a>
+			</div> 
+			
+			<nav class="nav">			
+				<ul>
+					<li class="navli"><a href ="Staff.html" accesskey="s"> About Staff </a></li>
+					<li class="navli"><a href ="Reservation.html" accesskey="r"> Tables Reservations </a></li>
+					<li class="navli"><a href ="Order.html" accesskey="o"> Orders </a></li>
+					<li class="dropdown"><a href ="Menu.html" accesskey="m" class="dropbtn"> Menu </a>
+						<div class="dropdown-content">
+							<a href="Dishes.html" accesskey="1"> Dishes </a>
+							<a href="Desserts.html" accesskey="2"> Desserts </a>
+							<a href="Drinks.html" accesskey="3"> Drinks </a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="toggle" onclick = DarkMode()>
+				<i class="indicator"></i>
+			</div>
+			
+			<ul class ="breadcrumb">
+				<li><a href="index.html"> Home </a></li>
+				<li>Orders</li>
+			</ul>
+			
+		</header>
+		
+		<div class="catbtn">
+			<div class="conty">
+				<a href="#dishes"><button class="titelbtn">Dishes</button></a>
+				<a href="#desserts"><button class="titelbtn">Desserts</button></a>
+				<a href="#drinks"><button class="titelbtn">Drinks</button></a>
+			</div>
+		</div>
+		
+		<div class="order">
+			
+			<div class="items-container">
+				
+				<table id="table">
+					<caption> order </caption>
+					<thead>
+						<tr class="th" id="dishes">
+							<th>product</th>
+							<th>Prise</th>
+							<th>quantity</th>
+							<th>subtotal</th>
+							<th><img src="img/Arrow.png" alt="" width="20" height="15" onclick="sortTable()" >
+								<img src="img/Arrow-up.png" alt="" width="20" height="15" onclick="sortTable_UP()">
+							</th>
+						</tr>
+						
+						<tr class="titel">
+							<td colspan="5" style="text-align:center">Dishes</td>
+						</tr>
+						
+					</thead>
+					
+					<tbody>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Briam (Roasted Vegetables).jpg" alt="Briam (Roasted Vegetables)" >
+									<div>
+										<p>Briam</p>
+										<small>prise : 55 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>55</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,55,'Briam')"></td>
+							<td id="Briam" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Choriatiki (Greek Salad).jpg" alt="Choriatiki (Greek Salad)" >
+									<div>
+										<p>Choriatiki</p>
+										<small>prise : 60 SAR</small>
+										
+									</div>
+								</div>
+							</td>
+							<td>60</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,60,'Choriatiki')"></td>
+							<td id="Choriatiki" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Dolmades (Stuffed Grapevine Leaves).jpg" alt="Dolmades (Stuffed Grapevine Leaves)" >
+									<div>
+										<p>Dolmades</p>
+										<small>prise : 50 SAR</small>
+										
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Dolmades')"></td>
+							<td id="Dolmades" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Fasolada (Greek Bean Soup).jpg" alt="Fasolada (Greek Bean Soup)" >
+									<div>
+										<p>Fasolada</p>
+										<small>prise : 45 SAR</small>
+										
+									</div>
+								</div>
+							</td>
+							<td>45</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,45,'Fasolada')"></td>
+							<td id="Fasolada" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Gemista (Stuffed Veggies with Rice).jpg" alt="Gemista (Stuffed Veggies with Rice)" >
+									<div>
+										<p>Gemista</p>
+										<small>prise : 56 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>56</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,56,'Gemista')"></td>
+							<td id="Gemista" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Gigantes (Giant Beans).jpg" alt="Gigantes (Giant Beans)" >
+									<div>
+										<p>Gigantes</p>
+										<small>prise : 45 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>45</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,45,'Gigantes')"></td>
+							<td id="Gigantes" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Giouvetsi (Beef Stew with Orzo Pasta).jpeg" alt="Giouvetsi (Beef Stew with Orzo Pasta)" >
+									<div>
+										<p>Giouvetsi</p>
+										<small>prise : 60 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>60</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,60,'Giouvetsi')"></td>
+							<td id="Giouvetsi" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Horta (Leafy Boiled Greens).jpg" alt="Horta (Leafy Boiled Greens)" >
+									<div>
+										<p>Horta</p>
+										<small>prise : 55 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>55</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,55,'Horta')"></td>
+							<td id="Horta" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Kleftiko.jpg" alt="Kleftiko" >
+									<div>
+										<p>Kleftiko</p>
+										<small>prise : 50 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Kleftiko')"></td>
+							<td id="Kleftiko" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Kolokithokeftedes (Fried ZucchiniCourgette Balls).jpg" alt="Kolokithokeftedes (Fried ZucchiniCourgette Balls)" >
+									<div>
+										<p>Kolokithokeftedes</p>
+										<small>prise : 54 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>54</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,54,'Kolokithokeftedes')"></td>
+							<td id="Kolokithokeftedes" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/moussaka.jpg" alt="moussaka" >
+									<div>
+										<p>Moussaka</p>
+										<small>prise : 50 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Moussaka')"></td>
+							<td id="Moussaka" class="cal">0 SAR</td>
+						</tr>	
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Papoutsakia (Stuffed Eggplants).jpeg" alt="Papoutsakia (Stuffed Eggplants)" >
+									<div>
+										<p>Papoutsakia</p>
+										<small>prise : 50 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Papoutsakia')"></td>
+							<td id="Papoutsakia" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Pastitsio (Greek lasagna).jpg" alt="Pastitsio (Greek lasagna)" >
+									<div>
+										<p>Pastitsio</p>
+										<small>prise : 55 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,55,'Pastitsio')"></td>
+							<td id="Pastitsio" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Soutzoukakia (Greek Meatballs).jpg" alt="Soutzoukakia (Greek Meatballs)" >
+									<div>
+										<p>Soutzoukakia</p>
+										<small>prise : 60 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>60</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,60,'Soutzoukakia')"></td>
+							<td id="Soutzoukakia" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Stifado (Greek Beef Stew).jpg" alt="Stifado (Greek Beef Stew)" >
+									<div>
+										<p>Stifado</p>
+										<small>prise : 56 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>56</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,56,'Stifado')"></td>
+							<td id="Stifado" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Tirokroketes (Fried Cheese Balls).jpg" alt="Tirokroketes (Fried Cheese Balls)" >
+									<div>
+										<p>Tirokroketes</p>
+										<small>prise : 55 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>55</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,55,'Tirokroketes')"></td>
+							<td id="Tirokroketes" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Tomatokeftedes (Tomato Fritters).jpg" alt="Tomatokeftedes (Tomato Fritters)" >
+									<div>
+										<p>Tomatokeftedes</p>
+										<small>prise : 50 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Tomatokeftedes')"></td>
+							<td id="Tomatokeftedes" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="dishes/Tzatziki.jpg" alt="Tzatziki" >
+									<div>
+										<p>Tzatziki</p>
+										<small>prise : 50 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>50</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,50,'Tzatziki')"></td>
+							<td id="Tzatziki" class="cal">0 SAR</td>
+						</tr>
+						
+						<!-- desserts -->
+						<tr class="th" id="desserts">
+							<th>product</th>
+							<th>Prise</th>
+							<th>quantity</th>
+							<th>subtotal</th>
+							<th><img src="img/Arrow.png" alt="" width="20" height="15" onclick="sortTableDS()" >
+								<img src="img/Arrow-up.png" alt="" width="20" height="15" onclick="sortTableDS_UP()">
+							</th>
+						</tr>
+						
+						<tr class="titel">
+							<td colspan="5" style="text-align:center">Desserts</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="desserts/cheese cake.jpg" alt="cheese cake">
+									<div>
+										<p>cheese cake</p>
+										<small>prise : 10 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>10</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,10,'cheese')"></td>
+							<td id="cheese" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="desserts/ice cream.jpg" alt="ice cream">
+									<div>
+										<p>ice cream</p>
+										<small>prise : 10 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>10</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,10,'ice')"></td>
+							<td id="ice" class="cal"> 0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="desserts/Macron.jpg" alt="Macron">
+									<div>
+										<p>Macron</p>
+										<small>prise : 10 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>10</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,10,'Macron')"></td>
+							<td id="Macron" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="desserts/waffle.jpg" alt="waffle">
+									<div>
+										<p>waffle</p>
+										<small>prise : 10 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>10</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,10,'waffle')"></td>
+							<td id="waffle" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="desserts/cookies.jpg" alt="cookies">
+									<div>
+										<p>cookies</p>
+										<small>prise : 10 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>10</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,10,'cookies')"></td>
+							<td id="cookies" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<!-- drinks -->
+						<tr class="th" id="drinks">
+							<th>product</th>
+							<th>Prise</th>
+							<th>quantity</th>
+							<th>subtotal</th>
+							<th><img src="img/Arrow.png" alt="" width="20" height="15" onclick="sortTableD()" >
+								<img src="img/Arrow-up.png" alt="" width="20" height="15" onclick="sortTableD_UP()">
+							</th>
+						</tr>
+						
+						<tr class="titel">
+							<td colspan="5" style="text-align:center">drinks</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/orange juice.jpg" alt="orange juice" >
+									<div>
+										<p>Orange juice</p>
+										<small>prise : 15 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>15</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,15,'Orange')"></td>
+							<td id="Orange" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/lemon and mint juice.jpg" alt="lemon and mint juice" >
+									<div>
+										<p>Lemon mint juice</p>
+										<small>prise : 15 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>15</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,15,'Lemon')"></td>
+							<td id="Lemon" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/watermelon juice.jpg" alt="watermelon juice" >
+									<div>
+										<p>watermelon juice</p>
+										<small>prise : 15 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>15</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,15,'watermelon')"></td>
+							<td id="watermelon" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/latte.jpg" alt="latte" >
+									<div>
+										<p>Latte</p>
+										<small>prise : 25 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>25</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,25,'Latte')"></td>
+							<td id="Latte" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/iced mocha.jpg" alt="iced mocha" >
+									<div>
+										<p>Iced mocha</p>
+										<small>prise : 20 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>20</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,20,'mocha')"></td>
+							<td id="mocha" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/tea.jpeg" alt="tea" >
+									<div>
+										<p>Tea</p>
+										<small>prise : 20 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>20</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,20,'Tea')"></td>
+							<td id="Tea" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/7up.jpg" alt="7up" >
+									<div>
+										<p>seven up</p>
+										<small>prise : 8 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>8</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,8,'seven')"></td>
+							<td id="seven" class="cal">0 SAR</td>
+						</tr>
+						
+						<tr >
+							<td>
+								<div class="cart-items">
+									<img src="drinks/coca-cola.jpg" alt="coca-cola" >
+									<div>
+										<p>Coca-cola</p>
+										<small>prise : 8 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>8</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,8,'Coca')"></td>
+							<td id="Coca" class="cal">0 SAR</td>
+						</tr>
+						
+						
+						<tr>
+							<td>
+								<div class="cart-items">
+									<img src="drinks/water.jpg" alt="water" >
+									<div>
+										<p>Water</p>
+										<small>prise : 8 SAR</small>
+									</div>
+								</div>
+							</td>
+							<td>8</td>
+							<td><input type="number" value="0" min="0" oninput="subCal(this.value,8,'Water')" ></td>
+							<td id="Water" class="cal">0 SAR</td>
+						</tr>
+						
+						
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div class="total-price">
+				<!-- 
+					<a href="#dishes"><button class="titelbtn">Dishes</button></a>
+					<a href="#desserts"><button class="titelbtn">Desserts</button></a>
+				<a href="#drinks"><button class="titelbtn">Drinks</button></a> -->
+				
+				<select class="left-div" name="tables-list" id="tables-list" onchange="Tnum()">
+					<option value = "-" selected>Select table:</option>
+					
+				</select>
+				
+				<table>
+					<tr>
+						<td>table number</td>
+						<td id="tablrNum"> </td>
+					</tr>
+					
+					<tr>
+						<td>subtotal</td>
+						<td id="subFinal">0 SAR</td>
+					</tr>
+					
+					<tr>
+						<td>Tax</td>
+						<td id="tax">0 SAR</td>
+					</tr>
+					
+					<tr>
+						<td>total</td>
+						<td id="total">0 SAR</td>
+					</tr>
+					
+					
+				</table>
+				
+				
+				<div class="button-container">
+					<button class="button orderbtn" type="button" formtarget="_self" onclick="order()">Order</button>	
+				</div>
+				
+				<br>
+				<br>
+				
+				<div id="show" style="border: 1px solid gray;"></div>
+				
+			</div>	
+		</div>
+		
+		
+		<footer>
+			<div class="footerLinks">
+				<ul>
+					<li><a href="https://twitter.com/OuranosKSA" target="_blank" > <img src="logo/twitter.png" alt="Twitter" ></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100074075235340" target="_blank" > <img src="logo/facebook.png" alt="Facebook" ></a></li>
+					<li><a href="mailto:ouranos.management@gmail.com" > <img src="logo/email.png" alt="Email" ></a></li>
+				</ul>
+			</div>
+			
+			<div class="copyright">
+				<p>Copyright 2021</p>
+			</div>
+			
+		</footer>
+		
+		<script src="all.js"></script>
+		<script src="Order.js"></script>
+		
+	</body>
+	
+</html>																																																												
